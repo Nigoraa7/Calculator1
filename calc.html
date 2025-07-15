@@ -15,15 +15,35 @@
                 <div class="section">
                     <div class="blocks">
                         <label>Страна отправителя</label>
-                        <select>
-                            <option value="">Польша</option>
-                        </select>
+                        <div class="sel">
+                          <img id="flag-sender" class="flag" src="flags/russia.png" alt="">
+                            <select id="select-sender">
+                                <option value="russia">Россия</option>
+                                <option value="poland">Польша</option>
+                                <option value="tajikistan">Таджикистан</option>
+                                <option value="kazakhstan">Казахстан</option>
+                                <option value="azerbaijan">Азербайджан</option>
+                                <option value="armeny">Армения</option>
+                                <option value="germany">Германия</option>
+                            </select>
+                        </div>
+                       
                     </div>
                     <div class="blocks">
                         <label>Страна получателя</label>
-                        <select>
-                            <option value="">Россия</option>
-                        </select>
+                        <div class="sel">
+                            <img id="flag-receiver" class="flag" src="flags/russia.png" alt="">
+                              <select id="select-receiver">
+                                <option value="russia">Россия</option>
+                                <option value="poland">Польша</option>
+                                <option value="tajikistan">Таджикистан</option>
+                                <option value="kazakhstan">Казахстан</option>
+                                <option value="azerbaijan">Азербайджан</option>
+                                <option value="armeny">Армения</option>
+                                <option value="germany">Германия</option>
+
+                              </select>
+                          </div>
                     </div>
                     <div class="blocks">
                         <label>Хочу перевести</label>
@@ -31,6 +51,12 @@
                             <input type="number" placeholder="0">
                             <select>
                                 <option value="">RUB</option>
+                                <option value="">PLN</option>
+                                <option value="">TJS</option>
+                                <option value="">KZT</option>
+                                <option value="">AZN</option>
+                                <option value="">AZMD</option>
+                                <option value="">EUR</option>
                             </select>
                         </div>
                     </div>
@@ -40,6 +66,12 @@
                             <input type="number" placeholder="0">
                             <select>
                                 <option value="">RUB</option>
+                                <option value="">PLN</option>
+                                <option value="">TJS</option>
+                                <option value="">KZT</option>
+                                <option value="">AZN</option>
+                                <option value="">AZMD</option>
+                                <option value="">EUR</option>
                             </select>
                         </div>
                     </div>
@@ -63,9 +95,10 @@
                 <label>Комментарий</label>
                 <textarea placeholder="Введите ваш комментарий..."></textarea>
 
-                <button>ОТПРАВИТЬ ЗАПРОС</button>
+                <button class="button">ОТПРАВИТЬ ЗАПРОС</button>
             </div>
         </div>
     </div>
+    <script src="calc.js"></script>
 </body>
 </html>

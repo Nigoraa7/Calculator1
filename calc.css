@@ -8,6 +8,7 @@ body{
     background-color: white;
     border-radius: 30px;
     display: flex;
+    justify-content: space-between;
     max-width: 1100px;
     margin: 50px auto;
     overflow: hidden;
@@ -15,16 +16,21 @@ body{
     gap: 40px;
     font-family: sans-serif;
     box-sizing: border-box;
+    align-items: center;
 }
 .left, .right{
     width: 50%;
     box-sizing: border-box;
+}
+.left p{
+    font-weight: 100;
 }
 .section{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
 .blocks{
     width: 48%;
     margin-top: 20px;
@@ -32,22 +38,28 @@ body{
 .input-select{
     display: flex;
     background-color: #E2EDFF66;
-    border-radius: 20px;
-    height: 48px;
+    border-radius: 15px;
     align-items: center;
-    padding: 0 10px;
+    padding: 3px 5px;
+    border: 1px solid #E2EDFF66;
+    margin-top: 10px;
 }
 .input-select input{
     border: none;
     background-color: transparent;
     width: 100%;
 }
-.blocks select{
+.sel{
     background-color: #E2EDFF66;
     margin-top: 10px;
-    border-radius: 20px;
-    border: none;
-    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid #E2EDFF66;
+    padding: 3px 5px;
+    display: flex;
+    
+}
+.sel select{
+    background-color: white;
 }
 .text{
     font-size: 12px;
@@ -66,34 +78,39 @@ body{
     background-color: #4D73F8;
     padding: 20px;
     border-radius: 30px;
+    width: 40%;
 }
 .request{
     width: 90%;
     color: white;
+    font-weight: 100;
+    font-size: 15px;
 }
 .request label{
     display: block;
     margin: 10px 0 5px;
 }
+
 .request input, .request select, .request textarea{
     width: 100%;
     padding: 8px;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     margin-bottom: 10px;
+    box-sizing: border-box;
 }
 .request textarea{
     resize: none;
     height: 60px;
 }
 .blocks select{
-    background-color: #E2EDFF66;
+    background-color: transparent;
     border: none;
     border-radius: 20px;
     padding: 10px 15px;
-    height: 48px;
     width: 100%;
     box-sizing: border-box;
+
 }
 button{
     width: 100%;
@@ -104,6 +121,14 @@ button{
     border-radius: 5px;
     cursor: pointer;
     font-weight: bold;
+}
+.flag{
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
 }
 
 
