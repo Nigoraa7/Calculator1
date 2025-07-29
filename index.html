@@ -13,71 +13,180 @@
                 <p>Простые действия для сложных процессов</p>
 
                 <div class="section">
+
                     <div class="blocks">
                         <label>Страна отправителя</label>
-                        <div class="sel">
-                          <img id="flag-sender" class="flag" src="flags/russia.png" alt="">
-                            <select id="select-sender">
-                                <option value="russia">Россия</option>
-                                <option value="poland">Польша</option>
-                                <option value="tajikistan">Таджикистан</option>
-                                <option value="kazakhstan">Казахстан</option>
-                                <option value="azerbaijan">Азербайджан</option>
-                                <option value="armeny">Армения</option>
-                                <option value="germany">Германия</option>
-                            </select>
-                        </div>
+           
+                        <select id="select-sender" style="display: none;">
+                          <option value="russia">Россия</option>
+                          <option value="poland">Польша</option>
+                          <option value="uk">Великобритания</option>
+                          <option value="germany">Германия</option>
+                          <option value="armenia">Армения</option>
+                          <option value="kazakhstan">Казахстан</option>
+                          <option value="azerbaijan">Азербайджан</option>
+                          <option value="tajikistan">Таджикистан</option>
+                        </select>
+                      
                        
-                    </div>
-                    <div class="blocks">
-                        <label>Страна получателя</label>
-                        <div class="sel">
-                            <img id="flag-receiver" class="flag" src="flags/russia.png" alt="">
-                              <select id="select-receiver">
-                                <option value="russia">Россия</option>
-                                <option value="poland">Польша</option>
-                                <option value="tajikistan">Таджикистан</option>
-                                <option value="kazakhstan">Казахстан</option>
-                                <option value="azerbaijan">Азербайджан</option>
-                                <option value="armeny">Армения</option>
-                                <option value="germany">Германия</option>
+                        <div class="custom-select" id="sender-dropdown">
+                          <div class="selected-option">
+                            <img src="" class="flag" style="display: none;" />
+                            <span>Выберите страну</span>
+                            <div class="arrow">▾</div>
 
-                              </select>
+                            
                           </div>
-                    </div>
+                          <div class="options hidden">
+                            <div class="option" data-value="russia">
+                              <img class="flag" src="flags/russia.png" />
+                              <span>Россия</span>
+                            </div>
+                            <div class="option" data-value="poland">
+                              <img class="flag" src="flags/poland.png" />
+                              <span>Польша</span>
+                            </div>
+                            <div class="option" data-value="uk">
+                              <img class="flag" src="flags/britain.png" />
+                              <span>Великобритания</span>
+                            </div>
+                            <div class="option" data-value="germany">
+                              <img class="flag" src="flags/germany.png" />
+                              <span>Германия</span>
+                            </div>
+                            <div class="option" data-value="armenia">
+                              <img class="flag" src="flags/armenia.png" />
+                              <span>Армения</span>
+                            </div>
+                            <div class="option" data-value="kazakhstan">
+                              <img class="flag" src="flags/kazakhstan.png" />
+                              <span>Казахстан</span>
+                            </div>
+                            <div class="option" data-value="azerbaijan">
+                              <img class="flag" src="flags/azerbaijan.png" />
+                              <span>Азербайджан</span>
+                            </div>
+                            <div class="option" data-value="tajikistan">
+                              <img class="flag" src="flags/tajikistan.png" />
+                              <span>Таджикистан</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="blocks">
+                        <label>Страна получателя</label>
+                        <select id="select-receiver" style="display: none;">
+                          <option value="russia">Россия</option>
+                          <option value="poland">Польша</option>
+                          <option value="uk">Великобритания</option>
+                          <option value="germany">Германия</option>
+                          <option value="armenia">Армения</option>
+                          <option value="kazakhstan">Казахстан</option>
+                          <option value="azerbaijan">Азербайджан</option>
+                          <option value="tajikistan">Таджикистан</option>
+                        </select>
+                    
+                        <div class="custom-select" id="receiver-dropdown">
+                          <div class="selected-option">
+                            <img src="" class="flag" style="display: none;" />
+                            <span>Выберите страну</span>
+                            <div class="arrow">▾</div>
+                          </div>
+                          <div class="options">
+                            <div class="option" data-value="russia">
+                                <img src="flags/russia.png" class="flag" />
+                              <span>Россия</span>
+                            </div>
+                            <div class="option" data-value="poland">
+                              <img class="flag" src="flags/poland.png" />
+                              <span>Польша</span>
+                            </div>
+                            <div class="option" data-value="uk">
+                              <img class="flag" src="flags/britain.png" />
+                              <span>Великобритания</span>
+                            </div>
+                            <div class="option" data-value="germany">
+                              <img class="flag" src="flags/germany.png" />
+                              <span>Германия</span>
+                            </div>
+                            <div class="option" data-value="armenia">
+                              <img class="flag" src="flags/armenia.png" />
+                              <span>Армения</span>
+                            </div>
+                            <div class="option" data-value="kazakhstan">
+                              <img class="flag" src="flags/kazakhstan.png" />
+                              <span>Казахстан</span>
+                            </div>
+                            <div class="option" data-value="azerbaijan">
+                              <img class="flag" src="flags/azerbaijan.png" />
+                              <span>Азербайджан</span>
+                            </div>
+                            <div class="option" data-value="tajikistan">
+                              <img class="flag" src="flags/tajikistan.png" />
+                              <span>Таджикистан</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    
+
+
                     <div class="blocks">
                         <label>Хочу перевести</label>
-                        <div class="input-select">
-                            <input type="number" placeholder="0">
-                            <select>
-                                <option value="">RUB</option>
-                                <option value="">PLN</option>
-                                <option value="">TJS</option>
-                                <option value="">KZT</option>
-                                <option value="">AZN</option>
-                                <option value="">AZMD</option>
-                                <option value="">EUR</option>
-                            </select>
+                        <div class="input-select" id="inp-sel">
+                            <input type="number" placeholder="0" id="inp">
+                            <div class="custom-dropdown" id="currency-dropdown-from">
+                                <div class="selected-option">
+                                  <span>RUB</span>
+                                  <div class="arrow">▾</div>
+                                </div>
+                                <div class="options">
+                                  <div class="option">RUB</div>
+                                  <div class="option">PLN</div>
+                                  <div class="option">TJS</div>
+                                  <div class="option">KZT</div>
+                                  <div class="option">AZN</div>
+                                  <div class="option">AZMD</div>
+                                  <div class="option">EUR</div>
+                                </div>
+                              </div>
+                              
                         </div>
                     </div>
+                    
                     <div class="blocks">
                         <label>Хочу получить</label>
-                        <div class="input-select">
-                            <input type="number" placeholder="0">
-                            <select>
-                                <option value="">RUB</option>
-                                <option value="">PLN</option>
-                                <option value="">TJS</option>
-                                <option value="">KZT</option>
-                                <option value="">AZN</option>
-                                <option value="">AZMD</option>
-                                <option value="">EUR</option>
-                            </select>
+                        <div class="input-select" id="inp-sel">
+                            <input type="number" placeholder="0" id="inp">
+                            <div class="custom-dropdown" id="currency-dropdown-to">
+                                <div class="selected-option">
+                                  <span>RUB</span>
+                                  <div class="arrow">▾</div>
+                                 </div>
+                                <div class="options">
+                                  <div class="option">RUB</div>
+                                  <div class="option">PLN</div>
+                                  <div class="option">TJS</div>
+                                  <div class="option">KZT</div>
+                                  <div class="option">AZN</div>
+                                  <div class="option">AZMD</div>
+                                  <div class="option">EUR</div>
+                                </div>
+                              </div>
+                              
                         </div>
                     </div>
                 </div>
-           <p class="text">Расчёт носит ознакомительный характер.Итоговый курс и сумма перевода подтверждаются при согласовании операции.</p>
-           <p class="text-highlight">Минимальная сумма отправки — 50 USD.</p>
+                <div class="bottom">
+                    <img src="Info Circle.svg" alt="">
+                    <div>
+                        <p class="text">Расчёт носит ознакомительный характер.Итоговый курс и сумма перевода подтверждаются при согласовании операции.</p>
+                    <p class="text-highlight">Минимальная сумма отправки — 50 USD.</p>
+                    </div>
+                </div>
+            
+
         </div>
         <div class="right">
             <div class="request">
@@ -85,9 +194,17 @@
                 <input type="text" placeholder="Введите ваше имя">
 
                 <label>Способ связи*</label>
-                <select>
-                    <option value="">Выберите способ связи</option>
-                </select>
+                <div class="custom-dropdown contact-method-dropdown">
+                    <div class="selected-option">
+                        <span>Выберите способ связи</span>
+                        <div class="arrow">▾</div>
+                    </div>
+                    <div class="options">
+                        <div class="option">Telegram</div>
+                        <div class="option">WhatsApp</div>
+                    </div>
+                </div>
+                <input type="hidden" name="contact-method" id="contact-method">
 
                 <label>Данные для связи*</label>
                 <input type="text" placeholder="Введите ваш никнейм">
